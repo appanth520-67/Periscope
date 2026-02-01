@@ -1,73 +1,55 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Periscope - Scientific Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/examples/js/controls/OrbitControls.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
 
-header {
-  background: #0a3d62;
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-}
+<header>
+  <h1>Periscopes: Seeing the Unseen</h1>
+</header>
 
-nav {
-  background: #336699;
-  padding: 1rem;
-  text-align: center;
-}
+<nav>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="principle.html">Working Principle</a>
+  <a href="types.html">Types</a>
+  <a href="submarine.html">Submarine Periscopes</a>
+</nav>
 
-nav a {
-  color: white;
-  margin: 0 1.2rem;
-  text-decoration: none;
-  font-weight: bold;
-}
+<main>
+  <section>
+    <h2>What is a Periscope?</h2>
+    <p>A periscope is an optical instrument that lets you observe over, around, or through obstacles without direct line of sight. It uses reflection to bend light paths.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Periscope_principle.svg/800px-Periscope_principle.svg.png" alt="Basic periscope principle with mirrors">
+  </section>
 
-nav a:hover {
-  text-decoration: underline;
-}
+  <section>
+    <h2>Scientific Facts</h2>
+    <ul>
+      <li>Works purely on the <strong>law of reflection</strong>: angle of incidence = angle of reflection</li>
+      <li>Mirrors/prisms are angled at 45° to bend light 90° twice → parallel but offset view</li>
+      <li>Submarine versions reach 10–20+ meters high and include magnification, rangefinding, night vision</li>
+      <li>Modern periscopes often use fiber optics or digital cameras instead of pure optics</li>
+    </ul>
+  </section>
 
-main {
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-}
+  <section>
+    <h2>Interactive 3D Model (Simple Periscope)</h2>
+    <p>Rotate & zoom using mouse. This is a simplified visualization of the tube + angled mirrors.</p>
+    <div id="threejs-container" class="three-container"></div>
+  </section>
+</main>
 
-h1, h2 {
-  color: #0a3d62;
-}
+<footer>
+  <p>Educational site about periscopes | Created February 2026</p>
+</footer>
 
-section {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 6px;
-}
-
-.three-container {
-  width: 100%;
-  height: 450px;
-  border: 1px solid #ccc;
-  margin: 1.5rem 0;
-}
-
-footer {
-  background: #0a3d62;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+</body>
+</html>
